@@ -21,6 +21,7 @@ body {
 body {
     background: #ffffff;
     color: #333;
+    margin-top: auto;
     text-align: center;
 }
 
@@ -39,7 +40,9 @@ body {
     align-items: center;
     position: sticky;
     top: 0;
-    width: 100%;
+    margin-top: 0%;
+    width: auto;
+    height: 60px;
     z-index: 1000;
 
 }
@@ -59,7 +62,7 @@ body {
 .nav-links a {
     text-decoration: none;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding: 10px;
     display: block;
     transition: 0.3s;
@@ -810,7 +813,8 @@ marquee a {
     }
 
     .college-name {
-        font-size: 2.5rem;
+        /* font-size: 2.5rem;s
+         */
         margin-left: 0;
         text-align: center;
     }
@@ -1151,10 +1155,16 @@ table td, table th {
       }
     }
     .name1{
-        font-size: 44px;
+        font-size: 35spx;
     }
     .name2{
-        font-size: 70px;
+        font-size:38px;
+        padding: 10px;
+        
+        
+
+
+    
     }
 
 
@@ -1250,7 +1260,7 @@ table td, table th {
   }
 
   .logo-img {
-    width: 120px;
+    width: 100px;
     height: auto;
   }
 
@@ -1378,15 +1388,15 @@ html {
     height: auto;
   }
 
-  .name1 {
+  /* .name1 {
     font-size: 28px;
     text-align: center;
   }
 
   .name2 {
-    font-size: 40px;
+    font-size: 20px;
     text-align: center;
-  }
+  } */
 }
 @media (max-width: 768px) {
   .menu-toggle {
@@ -1415,4 +1425,157 @@ html {
     font-size: 1rem;
     padding: 10px;
   }
+}
+
+
+
+
+
+/* 1920×1080 - Large Desktop */
+@media (min-width: 1900px) {
+  html { font-size: 18px; }
+  .container { max-width: 1800px; margin: auto; }
+}
+
+/* 1536×864 - Wide Laptops */
+@media (max-width: 1536px) {
+  html { font-size: 16px; }
+  .container { max-width: 1400px; }
+}
+
+/* 1440×900 - Standard Laptops */
+@media (max-width: 1440px) {
+  html { font-size: 15.5px; }
+  .container { max-width: 1300px; }
+}
+
+/* 1366×768 - Common Laptop Screen */
+@media (max-width: 1366px) {
+  html { font-size: 15px; }
+  .container { max-width: 1200px; }
+}
+
+/* 1280×720 - Smaller Screens or Projectors */
+@media (max-width: 1280px) {
+  html { font-size: 14.5px; }
+  .container { max-width: 1150px; }
+}
+
+/* 768×1024 - Tablets (Portrait) */
+@media (max-width: 1024px) and (min-width: 768px) {
+  html { font-size: 14px; }
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+
+
+/* === Responsive College Header Fix === */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eef0f5;
+  padding: 30px;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.logo-img {
+  width: 150px;
+  height:fit-content;
+  object-fit: contain;
+  max-width: 100%;
+
+}
+
+.name1, .name2 {
+  text-align: center;
+  word-break: break-word;
+}
+
+@media (min-width: 1600px) {
+  .container {
+    justify-content: center;
+    padding: 20px 50px;
+  }
+
+  .logo-img {
+    width: 200px;
+  }
+
+  .name1 {
+    font-size: 22px;
+  }
+
+  .name2 {
+    font-size: 45px;
+  }
+}
+
+
+
+/* 414×896 - iPhone XR/11 */
+@media (max-width: 414px) and (max-height: 896px) {
+  html { font-size: 14px; }
+  .logo-img { width: 100px; }
+  .name1 { font-size: 20px; }
+  .name2 { font-size: 28px; }
+}
+
+/* 375×667 - iPhone 6/7/8 */
+@media (max-width: 414px) and (max-height: 736px) {
+  html { font-size: 6.5px; }
+  .logo-img { width: 50px; }
+  .name1 { font-size: 14px; }
+  .name2 { font-size: 16px; 
+  }
+  
+}
+
+/* 375×812 - iPhone X/XS/11 Pro */
+@media (max-width: 375px) and (max-height: 812px) {
+  html { font-size: 13.5px; }
+  .logo-img { width: 95px; }
+  .name1 { font-size: 18px; }
+  .name2 { font-size: 25px; }
+}
+
+/* 414×736 - iPhone 6/7/8 Plus */
+@media (max-width: 414px) and (max-height: 736px) {
+  html { font-size: 14px; }
+  .logo-img { width: 100px; }
+  .name1 { font-size: 20px; }
+  .name2 { font-size: 26px; }
+}
+
+/* 360×640 - Android small devices */
+@media (max-width: 360px) and (max-height: 640px) {
+  html { font-size: 13px; }
+  .logo-img { width: 85px; }
+  .name1 { font-size: 16px; }
+  .name2 { font-size: 22px; }
+}
+
+/* 412×869 - Android large phones */
+@media (max-width: 412px) and (max-height: 869px) {
+  html { font-size: 5px; }
+  .logo-img { width: 50px; }
+  .name1 { font-size: 6px; }
+  .name2 { font-size: 8px; }
+}
+@media (max-width: 430px) and (max-height: 932px) {
+  html { font-size: 5px; }
+  .logo-img { width: 50px; }
+  .name1 { font-size: 6px; }
+  .name2 { font-size: 8px; }
 }
